@@ -25,6 +25,11 @@ public interface ConcessionService {
     //Different size of the same concession "Large, small popcorn"
     List<Concession> getConcessionsByName(String name);
 
+    // For NoPointerException
+    // May throw
+    //Optional<Concession> getConcessionsByName(String name);
 
 
+    // need to figure out if we'll use Id or name
+    void deleteConcession(Concession concession);
 }
